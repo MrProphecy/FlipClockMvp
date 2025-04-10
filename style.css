@@ -9,6 +9,7 @@ body {
   justify-content: center;
   height: 100vh;
   flex-direction: column;
+  text-align: center;
 }
 
 h1 {
@@ -22,7 +23,7 @@ h1 {
   letter-spacing: 0.1em;
 }
 
-.digit {
+.digit, .colon {
   background: #222;
   border: 2px solid #444;
   padding: 20px 10px;
@@ -31,12 +32,43 @@ h1 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+.colon {
+  background: none;
+  border: none;
+  color: #0ff;
+  padding: 0 5px;
+  box-shadow: none;
+}
+
 .donate {
   margin-top: 30px;
 }
 
-.donate a {
-  color: #0ff;
+.donate-btn {
+  background-color: #ffdd00;
+  color: #111;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 1.1em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+}
+
+.donate-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 221, 0, 0.5);
+}
+
+.alarm {
+  margin-top: 20px;
+}
+
+.alarm input, .alarm button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Orbitron', sans-serif;
 }
