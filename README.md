@@ -1,2 +1,0 @@
-# FlipClockMvp
-Flip Clock Mvp
